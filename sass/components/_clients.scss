@@ -1,0 +1,38 @@
+.clients {
+	margin-bottom: 94px;
+	margin-top: 94px;
+	background-color: $primary-background-color;
+    &__title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $primary-text-color;
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+.clients-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-bottom: 90px;
+}
+
+.clients-card__item {
+	width: 170px;
+	height: 92px;
+    & svg {
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        fill: #afb1b8;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    & svg:hover,
+    & svg:focus {
+        fill: $accent-color;
+        border: 1px solid $accent-color;
+    }
+}
